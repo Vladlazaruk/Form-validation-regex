@@ -1,6 +1,10 @@
 window.addEventListener('DOMContentLoaded', () =>{
-    const form = document.querySelector('form');
-    const inputs = document.querySelectorAll('input');
+    const form = document.querySelector('form'),
+          inputs = document.querySelectorAll('input'),
+          regExpName = /^[a-z0-9_-]{3,16}$/,
+          regExpEmail = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i,
+          regExpPassword = /^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$/;
+
     
     function validateElem(elem){
         if(elem.name == 'username'){
