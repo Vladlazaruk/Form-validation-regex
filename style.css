@@ -31,6 +31,7 @@ html {
 }
 
 .form__btn{
+  cursor: pointer;
   color:#fff;
   background-color: #000;
   margin-top: 10px;
