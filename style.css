@@ -13,10 +13,12 @@ html {
 }
 
 .form__item{
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
+
 
 .form__item input {
   min-height: 25px;
@@ -41,6 +43,18 @@ html {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 }
+
+.checked{
+  visibility: hidden;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 40px;
+  right: 10px;
+}
+
 .errors{
-  color:rgb(231, 127, 8)
+  color:rgb(231, 127, 8);
+  font-size: 14px;
 }
