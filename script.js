@@ -100,6 +100,10 @@ window.addEventListener('DOMContentLoaded', () =>{
         }
     }
 
+    function clearForm(elem){
+        elem.previousElementSibling.style.visibility = 'hidden';
+    }
+
     inputs.forEach(input => {
         input.addEventListener('blur', () => {
             validateElem(input);
@@ -111,6 +115,10 @@ window.addEventListener('DOMContentLoaded', () =>{
         console.log(checkbox.checked);
         if(isItValidateName == true && isItValidateEmail == true && isItValidatePass  == true && checkbox.checked == true){
             alert('ok');
+            form.reset();
+            inputs.forEach(input =>{
+                clearForm(input);
+            });
         }
       
     });
