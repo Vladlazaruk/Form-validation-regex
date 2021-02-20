@@ -27,10 +27,15 @@ html {
   margin-top: 5px;
 }
 
+#checkbox{
+  /* display: none; */
+}
 .form__item:nth-child(5){
   flex-direction: row;
-  align-items:center;
+  align-items: center;
 }
+
+
 
 .form__btn{
   cursor: pointer;
